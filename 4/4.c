@@ -155,12 +155,9 @@ int check_xmas(char **wordsearch, int i, int j, int rows, int columns) {
             wordsearch[i + 2][j + 2] == 'S' && 
             wordsearch[i + 1][j + 1] == 'A') ||
             (wordsearch[i + 2][j] == 'S' && 
-                wordsearch[i][j + 2] == 'M' && 
-                wordsearch[i + 2][j + 2] == 'S' && 
-                wordsearch[i + 1][j + 1] == 'A'))
-            
-
-            {
+            wordsearch[i][j + 2] == 'M' && 
+            wordsearch[i + 2][j + 2] == 'S' && 
+            wordsearch[i + 1][j + 1] == 'A')) {
             return 1;
         }
     }   
@@ -172,13 +169,11 @@ int check_xmas(char **wordsearch, int i, int j, int rows, int columns) {
             wordsearch[i + 2][j + 2] == 'M' && 
             wordsearch[i + 1][j + 1] == 'A') ||
             (wordsearch[i + 2][j] == 'M' && 
-                wordsearch[i][j + 2] == 'S' && 
-                wordsearch[i + 2][j + 2] == 'M' && 
-                wordsearch[i + 1][j + 1] == 'A'))
-             {
+            wordsearch[i][j + 2] == 'S' && 
+            wordsearch[i + 2][j + 2] == 'M' && 
+            wordsearch[i + 1][j + 1] == 'A')) {
             return 1;
-        }
-        
+        }        
     }
     return 0;
 }
